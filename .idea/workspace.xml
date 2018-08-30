@@ -109,6 +109,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -132,8 +133,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="231" />
-    <option name="y" value="23" />
+    <option name="x" value="441" />
+    <option name="y" value="26" />
     <option name="width" value="1184" />
     <option name="height" value="877" />
   </component>
@@ -163,7 +164,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -192,7 +193,7 @@
       <workItem from="1535641476717" duration="1748000" />
       <workItem from="1535643808498" duration="8000" />
       <workItem from="1535643827055" duration="13000" />
-      <workItem from="1535643862473" duration="252000" />
+      <workItem from="1535643862473" duration="599000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1535641525816</created>
@@ -226,11 +227,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2917000" />
+    <option name="totallyTimeSpent" value="3264000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="231" y="23" width="1184" height="877" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.216681" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -244,7 +244,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3299363" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3299363" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
