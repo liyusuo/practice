@@ -20,20 +20,30 @@ obj2 = null;
 > 当前私有作用域中的部分内存被作用域以外的东西占用了，那么当前的这个作用域就不能销毁了
 ```
 1. 函数执行返回了一个引用数据类型的值，并且在函数的外面被一个其他的东西给接受了，这种情况下一般形成的私有作用域都不会销毁
-        function fn(){
+    function fn(){
+        var num = 100;
+        return function(){
+
+        }
+    }
+    var f = fn(); //fn执行形成的这个私有的作用域就不能再销毁了
+
+
+2. 在一个私有的作用域中给DOM元素的事件绑定方法，一般情况下我们的私有作用域都不销毁
+    var oDiv = document.getElementById("div1");
+    ~function(){
+        oDiv.onclick = function(){
+
+        }
+    }(); //当前自执行函数形成的这个私有的作用域也不销毁
+
+3. 下属情况属于不立即销毁
+    function fn(){
             var num = 100;
             return function(){
 
             }
         }
-        var f = fn(); //fn执行形成的这个私有的作用域就不能再销毁了
+        fn()();
 
-
-2. 在一个私有的作用域中给DOM元素的事件绑定方法，一般情况下我们的私有作用域都不销毁
-        var oDiv = document.getElementById("div1");
-        ~function(){
-            oDiv.onclick = function(){
-
-            }
-        }(); //当前自执行函数形成的这个私有的作用域也不销毁
 ```
