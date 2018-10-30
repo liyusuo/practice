@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="btnBox">
+        <input type="button" value="button_1">
+        <input type="button" value="button_2">
+        <input type="button" value="button_3">
+        <input type="button" value="button_4">
+        <input type="button" value="button_5">
+    </div>
+</body>
+<script>
+/*   var btnBox = document.getElementById('btnBox');
+   var inputs = btnBox.getElementsByTagName('input');
+   for (var i = 0 ; i<inputs.length;i++){
+       console.log(inputs[i].index)
+       inputs[i].l = i
+       console.log(inputs[i].l)
+       inputs[i].onclick = function () {
+           alert(this.l)
+       }
+   }*/
+
+   /*var a = 0;
+   function fun() {
+       console.log(a);
+       var a = 10 ;
+       console.log(a)
+   }
+   fun();
+   console.log(a)*/
+
+  /* var a = 0 ;
+   var b = a;
+
+   console.log(a === b)*/
+
+  var point = {
+      x:10,
+      y:20,
+      moveTo:function (x,y) {
+          var moveX = function (x) {
+              this.x = x
+              console.log(this)
+          }
+          var moveY = function (y) {
+              this.y =y
+          }
+          moveX(x);
+          moveY(y)
+      }
+  }
+  point.moveTo(100,200);
+  console.log(point.x)
+  console.log(point.y)
+  console.log(x)
+  console.log(y)
+</script>
+</html>
