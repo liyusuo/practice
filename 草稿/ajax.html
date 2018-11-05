@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+</body>
+<script>
+    let body = document.getElementsByTagName('body')[0]
+    let req = new XMLHttpRequest();
+    req.onreadystatechange = function () {
+        console.log(req)
+        if(req.readyState == '4'){
+            body.style.backgroundColor = 'yellow'
+        }
+        if(req.readyState == '1'){
+            body.style.backgroundColor = 'red'
+        }
+    }
+    req.open('get','./111.json');
+    req.send();
+</script>
+</html>

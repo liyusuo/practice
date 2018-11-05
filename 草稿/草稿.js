@@ -102,7 +102,7 @@ findMaxDuplicateChar("liyusuolllluuuuu")*/
     console.log(arr)
 }
 fn1("asdaaa")*/
-
+/*
 let obj = {};
 let arr = [];
 let stu = [
@@ -121,7 +121,7 @@ for (let i =0  ; i<stu.length; i++){
         obj[stu[i].label] = arr
     }
 }
-console.log(obj)
+console.log(obj)*/
 /*for (let i =0  ; i<stu.length; i++){
    if(!obj[stu[i].label]){
        obj[stu[i].label] = 1;
@@ -137,4 +137,16 @@ for (k in obj){
 }
 console.log(obj)*/
 
+
+
+
+/*for(var i = 1; i<=5;i++){
+    (function(j){
+
+        setTimeout(function () {
+            console.log(j)
+        },0)
+    })(i)
+
+}*/
 
